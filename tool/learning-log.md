@@ -1,13 +1,14 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **C++**
 
-## Project: **X**
+## Project: **2D time game**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/19/26:
+* I learned how to make variables
+* 
 
 ### X/X/XX:
 * Text
