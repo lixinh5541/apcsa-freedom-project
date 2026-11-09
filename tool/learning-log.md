@@ -14,8 +14,16 @@
 * I also learned about vectors which are like arrays
 * I also learned a little about loops and I learned two types a simple one for just iterating through everything and harder one
 
-### X/X/XX:
-* Text
+### 11/9/26:
+* SDL2 is the library I will use
+* I learned about window class and event manager class
+* Window class displays things to the user
+* Event manager takes all the inputs
+* They are seperated into .h and .cpp files
+* .h declares the class and its methods
+* .cpp defines what the methods do
+* main.cpp links them using `#include` then the .h file
+
 
 
 <!-- 
