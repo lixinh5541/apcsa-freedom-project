@@ -24,6 +24,15 @@
 * .cpp defines what the methods do
 * main.cpp links them using `#include` then the .h file
 
+### 11/22/26
+* installed VScode
+* Initialized CMake and got it to work
+* Decided on a compiler (Clang) and used it along with CMake
+* To test out Clang and CMake, I made a window and rendered a background and moveable sprite
+* It was hard to set up Clang, and CMake because there were a ton of errors and they were very unique to my specific case
+* Some things I learned from my errors were that to use the things I installed, I had to first check if they were in my system PATH
+* I learned some basic concepts I would have to use like the game loop and event manager
+
 
 
 <!-- 
