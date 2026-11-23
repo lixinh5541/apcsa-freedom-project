@@ -32,6 +32,39 @@
 * It was hard to set up Clang, and CMake because there were a ton of errors and they were very unique to my specific case
 * Some things I learned from my errors were that to use the things I installed, I had to first check if they were in my system PATH
 * I learned some basic concepts I would have to use like the game loop and event manager
+``` C++
+ while (running) // Game Loop
+    {
+        // Handle events
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+                running = false;
+
+            if (event.type == SDL_KEYDOWN){  
+                if (event.key.keysym.sym == SDLK_ESCAPE){
+                    running = false;
+                }
+                if (event.key.keysym.sym == SDLK_d){
+                    x_pos_rect = x_pos_rect + 10;
+                }
+            }
+        }
+
+        // Clear screen (dark gray)
+        SDL_SetRenderDrawColor(renderer, 30, 30, 30, 255);
+        SDL_RenderClear(renderer);
+
+        // Draw a red rectangle
+        SDL_Rect rect = {x_pos_rect, 250, 100, 100 };
+
+        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+        SDL_RenderFillRect(renderer, &rect);
+
+        // Present everything
+        SDL_RenderPresent(renderer);
+    }
+```
 
 
 
